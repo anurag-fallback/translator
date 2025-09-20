@@ -9,7 +9,7 @@ import { useConfig, useUser } from 'tg.globalContext/helpers';
 import { TolgeeLogo } from 'tg.component/common/icons/TolgeeLogo';
 
 import { UserMenu } from '../../security/UserMenu/UserMenu';
-import { QuickStartTopBarButton } from '../QuickStartGuide/QuickStartTopBarButton';
+//import { QuickStartTopBarButton } from '../QuickStartGuide/QuickStartTopBarButton';
 import { LanguageMenu } from 'tg.component/layout/TopBar/LanguageMenu';
 import { TopBarAnnouncements } from './announcements/TopBarAnnouncements';
 import { TopBarTestClockInfo } from './TopBarTestClockInfo';
@@ -76,7 +76,7 @@ export const TopBar: FC<Props> = ({ hideQuickStart, ...announcementProps }) => {
 
   const topBarHidden = useGlobalContext((c) => !c.layout.topBarHeight);
   const topBannerSize = useGlobalContext((c) => c.layout.topBannerHeight);
-  const quickStartEnabled = useGlobalContext((c) => c.quickStartGuide.enabled);
+  // const quickStartEnabled = useGlobalContext((c) => c.quickStartGuide.enabled);
 
   const user = useUser();
 
@@ -123,7 +123,7 @@ export const TopBar: FC<Props> = ({ hideQuickStart, ...announcementProps }) => {
         </Box>
         {user && <NotificationsTopBarButton />}
         <TopBarTestClockInfo />
-        {quickStartEnabled && !hideQuickStart && <QuickStartTopBarButton />}
+        {/*{quickStartEnabled && !hideQuickStart && <QuickStartTopBarButton />}*/}
         {!user && <LanguageMenu />}
         {user && <UserMenu />}
       </StyledToolbar>

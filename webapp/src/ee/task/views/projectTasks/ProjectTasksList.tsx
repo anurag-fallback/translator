@@ -59,14 +59,14 @@ export const ProjectTasksList = ({
 
   const allReady = tasksLoadable.isFetched;
   const allEmpty = tasksLoadable.data?.page?.totalElements === 0;
-
-  if (allReady && allEmpty && !tasksFeature) {
-    return (
-      <Box>
-        <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
-      </Box>
-    );
-  }
+  //
+  // if (allReady && allEmpty && !tasksFeature) {
+  //   return (
+  //     <Box>
+  //       <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
+  //     </Box>
+  //   );
+  // }
 
   return (
     <PaginatedHateoasList

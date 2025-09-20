@@ -49,7 +49,7 @@ export const CompactFooter = () => {
       <StyledContent>
         <StyledSocial>
           <StyledLink
-            href="https://twitter.com/tolgee_i18n"
+            href="https://twitter.com/ToyotaServiceSa"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,7 +59,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://www.facebook.com/Tolgee.i18n"
+            href="https://ar-ar.facebook.com/ToyotaServiceSA"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +69,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://github.com/tolgee/tolgee-platform"
+            href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,7 +79,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://www.linkedin.com/company/tolgee/"
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +89,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://tolg.ee/slack"
+            href="Link_of_slack"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,7 +99,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://github.com/tolgee/tolgee-platform/discussions"
+            href="Link of _github_discussion"
             target="_blank"
             rel="noopener noreferrer"
           >

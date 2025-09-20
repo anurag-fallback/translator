@@ -42,7 +42,8 @@ export const ProjectTasksView = () => {
   });
   const [minus30Days] = useState(Date.now() - DAY * 30);
 
-  const canEditTasks = satisfiesPermission('tasks.edit');
+  // const canEditTasks = satisfiesPermission('tasks.edit');
+  const canEditTasks = true;
 
   const rightPanelWidth = useGlobalContext((c) => c.layout.rightPanelWidth);
 

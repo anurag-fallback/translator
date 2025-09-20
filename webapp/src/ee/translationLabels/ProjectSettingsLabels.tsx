@@ -133,7 +133,7 @@ export const ProjectSettingsLabels = () => {
                 params={{
                   LearnMore: (
                     <LinkReadMore
-                      url={`${DOCS_ROOT}/platform/translation_process/labels`}
+                      //url={`${DOCS_ROOT}/platform/translation_process/labels`}
                     />
                   ),
                 }}
@@ -177,11 +177,11 @@ export const ProjectSettingsLabels = () => {
               />
             )}
           />
-        ) : (
+            ) :  (
           <Box>
-            <DisabledFeatureBanner
-              customMessage={t('labels_feature_description')}
-            />
+            {/*<DisabledFeatureBanner*/}
+            {/*  //customMessage={t('labels_feature_description')}*/}
+            {/*/>*/}
           </Box>
         )}
       </Box>

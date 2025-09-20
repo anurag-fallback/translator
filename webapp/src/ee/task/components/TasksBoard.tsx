@@ -81,13 +81,13 @@ export const TasksBoard = ({
     (l) => l.data?.pages?.[0].page?.totalElements === 0
   );
 
-  if (allReady && allEmpty && !tasksFeature) {
-    return (
-      <Box>
-        <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
-      </Box>
-    );
-  }
+  // if (allReady && allEmpty && !tasksFeature) {
+  //   return (
+  //     <Box>
+  //       <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
+  //     </Box>
+  //   );
+  // }
 
   return (
     <StyledContainer>

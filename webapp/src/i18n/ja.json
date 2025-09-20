@@ -431,7 +431,7 @@
   "api-key-new-token-message": "APIキーが作成されました。個人アクセストークンをコピーしてください。再度表示することはできません！",
   "api-key-regenerated-token-message": "APIキーが再生成されました。個人アクセストークンをコピーしてください。再度表示することはできません！",
   "api_keys_add": "APIキー",
-  "api-keys-description": "プロジェクトAPIキーは、Tolgee 統合を使用する場合や、キー、翻訳、スクリーンショットなどのデータを単一のプロジェクトで操作する必要がある場合に便利です。複数のプロジェクトまたは組織で作業する必要がある場合は、個人アクセストークンを使用します。",
+  "api-keys-description": "プロジェクトAPIキーは、Jameel Translate 統合を使用する場合や、キー、翻訳、スクリーンショットなどのデータを単一のプロジェクトで操作する必要がある場合に便利です。複数のプロジェクトまたは組織で作業する必要がある場合は、個人アクセストークンを使用します。",
   "api_key_selector_create_new": "新規作成",
   "api-keys-empty-action": "新しいプロジェクトAPIキーを作成する",
   "api-keys-empty-message": "プロジェクトのAPIキーはまだ追加されていません",

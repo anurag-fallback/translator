@@ -53,16 +53,18 @@ export const MyTasksList = ({
     },
   });
 
-  const allReady = tasksLoadable.isFetched;
-  const allEmpty = tasksLoadable.data?.page?.totalElements === 0;
+  // const allReady = tasksLoadable.isFetched;
+  const allReady = true;
+  // const allEmpty = tasksLoadable.data?.page?.totalElements === 0;
+  const allEmpty = true;
 
-  if (allReady && allEmpty && !tasksFeature) {
-    return (
-      <Box>
-        <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
-      </Box>
-    );
-  }
+  // //if (allReady && allEmpty && !tasksFeature) {
+  //   return (
+  //     // <Box>
+  //     //   <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
+  //     // </Box>
+  //   );
+  // }
 
   return (
     <PaginatedHateoasList

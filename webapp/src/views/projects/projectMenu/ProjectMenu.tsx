@@ -103,22 +103,22 @@ export const ProjectMenu = () => {
       dataCy: 'project-menu-item-export',
       quickStart: { itemKey: 'menu_export' },
     },
-    {
-      id: 'developer',
-      condition: ({ satisfiesPermission }) =>
-        satisfiesPermission('content-delivery.publish') ||
-        satisfiesPermission('webhooks.manage'),
-      link: canPublishCd
-        ? LINKS.PROJECT_CONTENT_STORAGE
-        : LINKS.PROJECT_WEBHOOKS,
-      icon: Code02,
-      text: t('project_menu_developer'),
-      dataCy: 'project-menu-item-developer',
-      quickStart: { itemKey: 'menu_developer' },
-      matchAsPrefix: LINKS.PROJECT_DEVELOPER.build({
-        [PARAMS.PROJECT_ID]: project.id,
-      }),
-    },
+    // {
+    //   id: 'developer',
+    //   condition: ({ satisfiesPermission }) =>
+    //     satisfiesPermission('content-delivery.publish') ||
+    //     satisfiesPermission('webhooks.manage'),
+    //   link: canPublishCd
+    //     ? LINKS.PROJECT_CONTENT_STORAGE
+    //     : LINKS.PROJECT_WEBHOOKS,
+    //   icon: Code02,
+    //   text: t('project_menu_developer'),
+    //   dataCy: 'project-menu-item-developer',
+    //   quickStart: { itemKey: 'menu_developer' },
+    //   matchAsPrefix: LINKS.PROJECT_DEVELOPER.build({
+    //     [PARAMS.PROJECT_ID]: project.id,
+    //   }),
+    // },
     {
       id: 'integrate',
       condition: ({ satisfiesPermission }) => satisfiesPermission('keys.view'),

@@ -64,7 +64,7 @@ export const IntegrateView: FunctionComponent = () => {
           params={{
             link: (
               <Link
-                href="https://tolgee.io/integrations"
+                href="about_Jameel_Translate_coming_soon"
                 target="_blank"
                 rel="noopener noreferrer"
               />
@@ -118,36 +118,36 @@ export const IntegrateView: FunctionComponent = () => {
           <StepLabel>
             <T keyName="integrate_step_integrate" />
           </StepLabel>
-          <StepContent sx={{ maxWidth: '100%' }}>
-            <React.Suspense fallback={<FullPageLoading />}>
-              {selectedWeapon && selectedApiKey && (
-                <Box data-cy="integrate-guide">
-                  <MdxProvider
-                    modifyValue={(code) => {
-                      return code
-                        ?.replace(
-                          API_KEY_PLACEHOLDER,
-                          selectedApiKey['key'] ||
-                            t({
-                              key: 'integrate-api-key-hidden-description',
-                              params: {
-                                description: selectedApiKey?.description,
-                              },
-                            })
-                        )
-                        .replace(
-                          API_URL_PLACEHOLDER,
-                          import.meta.env.VITE_APP_API_URL ||
-                            window.location.origin
-                        )
-                        .replace(PROJECT_ID, String(project.id));
-                    }}
-                    content={selectedWeapon.guide}
-                  />
-                </Box>
-              )}
-            </React.Suspense>
-          </StepContent>
+          {/*<StepContent sx={{ maxWidth: '100%' }}>*/}
+          {/*  <React.Suspense fallback={<FullPageLoading />}>*/}
+          {/*    {selectedWeapon && selectedApiKey && (*/}
+          {/*      <Box data-cy="integrate-guide">*/}
+          {/*        <MdxProvider*/}
+          {/*          modifyValue={(code) => {*/}
+          {/*            return code*/}
+          {/*              ?.replace(*/}
+          {/*                API_KEY_PLACEHOLDER,*/}
+          {/*                selectedApiKey['key'] ||*/}
+          {/*                  t({*/}
+          {/*                    key: 'integrate-api-key-hidden-description',*/}
+          {/*                    params: {*/}
+          {/*                      description: selectedApiKey?.description,*/}
+          {/*                    },*/}
+          {/*                  })*/}
+          {/*              )*/}
+          {/*              .replace(*/}
+          {/*                API_URL_PLACEHOLDER,*/}
+          {/*                import.meta.env.VITE_APP_API_URL ||*/}
+          {/*                  window.location.origin*/}
+          {/*              )*/}
+          {/*              .replace(PROJECT_ID, String(project.id));*/}
+          {/*          }}*/}
+          {/*          content={selectedWeapon.guide}*/}
+          {/*        />*/}
+          {/*      </Box>*/}
+          {/*    )}*/}
+          {/*  </React.Suspense>*/}
+          {/*</StepContent>*/}
         </Step>
       </Stepper>
     </BaseProjectView>

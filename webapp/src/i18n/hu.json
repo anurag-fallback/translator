@@ -430,7 +430,7 @@
   "api-key-new-token-message": "Az API-kulcs létrehozva. Győződjön meg róla, hogy most másolja ki a személyes hozzáférési tokenjét. Többé nem fogja látni!",
   "api-key-regenerated-token-message": "Az API-kulcs újragenerálva. Győződjön meg róla, hogy most másolja ki a személyes hozzáférési tokenjét. Többé nem fogja látni!",
   "api_keys_add": "API-kulcs",
-  "api-keys-description": "A projekt API-kulcsok hasznosak, ha Tolgee integrációkat szeretne használni, vagy egyetlen projektben kell dolgoznia, mint például kulcsok, fordítások vagy képernyőképek. Ha több projekttel vagy szervezettel kell dolgoznia, használja a <link>Személyes hozzáférési tokeneket</link>.",
+  "api-keys-description": "A projekt API-kulcsok hasznosak, ha Jameel Translate integrációkat szeretne használni, vagy egyetlen projektben kell dolgoznia, mint például kulcsok, fordítások vagy képernyőképek. Ha több projekttel vagy szervezettel kell dolgoznia, használja a <link>Személyes hozzáférési tokeneket</link>.",
   "api_key_selector_create_new": "Új létrehozása",
   "api-keys-empty-action": "Új Projekt API-kulcs létrehozása",
   "api-keys-empty-message": "Még nincs hozzáadva projekt API-kulcs",

@@ -158,7 +158,7 @@ export const ProjectSettingsAdvanced = () => {
             params={{
               LearnMore: (
                 <LinkReadMore
-                  url={`${DOCS_ROOT}/platform/translation_process/tolgee_universal_icu_placeholders`}
+                  //url={`${DOCS_ROOT}/platform/translation_process/tolgee_universal_icu_placeholders`}
                 />
               ),
             }}
@@ -181,7 +181,9 @@ export const ProjectSettingsAdvanced = () => {
             keyName="project_settings_use_namespaces_hint"
             params={{
               LearnMore: (
-                <LinkReadMore url={`${DOCS_ROOT}/js-sdk/namespaces`} />
+                <LinkReadMore
+                    //url={`${DOCS_ROOT}/js-sdk/namespaces`}
+                />
               ),
             }}
           />

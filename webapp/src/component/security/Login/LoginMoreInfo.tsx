@@ -13,9 +13,9 @@ const StyledContainer = styled('div')`
 export const LoginMoreInfo = () => {
   const isSmall = useMediaQuery(SPLIT_CONTENT_BREAK_POINT);
   return (
-    <StyledContainer>
+    <StyledContainer >
       {!isSmall && <MouseIllustration />}
-      <TolgeeMore />
+      {/*<TolgeeMore />*/}
     </StyledContainer>
   );
 };

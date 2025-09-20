@@ -131,9 +131,9 @@ export const TaskCreateDialog = ({
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="lg">
-      {!taskFeature && (
-        <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />
-      )}
+      {/*{!taskFeature && (*/}
+      {/*  <DisabledFeatureBanner customMessage={t('tasks_feature_description')} />*/}
+      {/*)}*/}
       <StyledMainTitle>
         <T keyName="batch_operation_create_task_title" />
       </StyledMainTitle>

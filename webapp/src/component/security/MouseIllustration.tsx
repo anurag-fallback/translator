@@ -1,9 +1,13 @@
 import { Box, styled, useTheme } from '@mui/material';
 
 const StyledIllustration = styled(Box)`
-  display: grid;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 `;
 
 const StyledMouse = styled('img')`
@@ -14,7 +18,7 @@ const StyledMouse = styled('img')`
 export function MouseIllustration() {
   const theme = useTheme();
   return (
-    <StyledIllustration>
+    <StyledIllustration >
       <StyledMouse
         src={
           theme.palette.mode === 'dark'
@@ -22,6 +26,7 @@ export function MouseIllustration() {
             : '/images/mouseYogaLight.svg'
         }
       />
+        <h2>Welcome To Jameel Translate</h2>
     </StyledIllustration>
   );
 }

@@ -107,7 +107,7 @@ export const RootRouter = () => {
               <OrganizationsRouter />
             </PrivateRoute>
           </Switch>
-          <HelpMenu />
+          {/*<HelpMenu />*/}
         </RequirePreferredOrganization>
       </Switch>
 

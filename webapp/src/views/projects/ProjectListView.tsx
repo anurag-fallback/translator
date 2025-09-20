@@ -71,16 +71,7 @@ export const ProjectListView = () => {
           searchPlaceholder={t('projects_search_placeholder')}
           maxWidth={1000}
           allCentered
-          addComponent={
-            addAllowed && (
-              <QuickStartHighlight itemKey="add_project">
-                <BaseViewAddButton
-                  addLinkTo={LINKS.PROJECT_ADD.build()}
-                  label={t('projects_add_button')}
-                />
-              </QuickStartHighlight>
-            )
-          }
+
           addLabel={t('projects_add_button')}
           hideChildrenOnLoading={false}
           navigation={[
