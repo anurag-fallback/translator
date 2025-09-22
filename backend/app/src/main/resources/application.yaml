@@ -35,10 +35,22 @@ spring:
     jdbc:
       initialize-schema: always
 tolgee:
+  smtp:
+    host: smtp.office365.com
+    username: SapHybrisProd1SRVC@ALJ.COM
+    password: Ghassan@2020
+    port: 587
+    auth: true
+    tls-enabled: true
+    ssl-enabled: false
+    tls-required: true
+    from: SapHybrisProd1SRVC@ALJ.COM
   authentication:
+
     enabled: true
     initial-password: admin
     initial-username: admin
+    registrationsAllowed: true
   postgres-autostart:
     enabled: false
   cache:

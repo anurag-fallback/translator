@@ -37,7 +37,7 @@ export const SignUpProviders = () => {
           <MouseIllustration />
         </Box>
       )}
-      <TolgeeMore />
+      {/*<TolgeeMore />*/}
     </StyledProviders>
   );
 };

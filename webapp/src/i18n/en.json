@@ -1102,7 +1102,7 @@
   "invoice_usage_download_button": "Download detailed report",
   "key_add": "Key",
   "key_context_dialog_title": "Related keys",
-  "key-context-present-hint": "Tolgee context is available for this key",
+  "key-context-present-hint": "Jameel Translate context is available for this key",
   "key_edit_modal_context_hint": "This key is related to the following keys:",
   "key_edit_modal_disabled_languages_hint": "Select languages to which this key shouldn't be translated",
   "key_edit_modal_disabled_translations": "Disabled translations",
