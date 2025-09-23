@@ -131,9 +131,9 @@ export const ProjectTasksView = () => {
           onViewChange={setView}
           isSmall={isSmall}
           project={project}
-          onOrderTranslation={
-            canEditTasks ? () => setOrderTranslation(true) : undefined
-          }
+          //onOrderTranslation={
+          //   canEditTasks ? () => setOrderTranslation(true) : undefined
+          // }
         />
 
         {view === 'LIST' && !isSmall ? (
@@ -177,21 +177,21 @@ export const ProjectTasksView = () => {
             allLanguages={allLanguages}
           />
         )}
-        {orderTranslation && (
-          <OrderTranslationsDialog
-            open={orderTranslation}
-            onClose={() => setOrderTranslation(false)}
-            onFinished={() => setOrderTranslation(false)}
-            initialValues={{
-              languages: allLanguages
-                .filter((l) => languagesPreference.includes(l.tag))
-                .filter((l) => !l.base)
-                .map((l) => l.id),
-            }}
-            projectId={project.id}
-            allLanguages={allLanguages}
-          />
-        )}
+        {/*{orderTranslation && (*/}
+        {/*  <OrderTranslationsDialog*/}
+        {/*    open={orderTranslation}*/}
+        {/*    onClose={() => setOrderTranslation(false)}*/}
+        {/*    onFinished={() => setOrderTranslation(false)}*/}
+        {/*    initialValues={{*/}
+        {/*      languages: allLanguages*/}
+        {/*        .filter((l) => languagesPreference.includes(l.tag))*/}
+        {/*        .filter((l) => !l.base)*/}
+        {/*        .map((l) => l.id),*/}
+        {/*    }}*/}
+        {/*    projectId={project.id}*/}
+        {/*    allLanguages={allLanguages}*/}
+        {/*  />*/}
+        {/*)}*/}
       </Box>
     </BaseProjectView>
   );

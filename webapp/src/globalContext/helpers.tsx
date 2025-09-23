@@ -55,7 +55,8 @@ export const useEnabledFeatures = () => {
   return {
     features,
     isEnabled(feature: Feature) {
-      return features.includes(feature);
+      //return features.includes(feature);
+        return true;
     },
   };
 };

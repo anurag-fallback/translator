@@ -55,7 +55,7 @@ export const DashboardPage: FunctionComponent<Props> = ({
 
   return (
     <>
-      <TopBanner />
+      {/*<TopBanner />*/}
       {(isAdminAccess || isDebuggingCustomerAccount) && (
         <AdminFrame data-cy="administration-frame" />
       )}

@@ -33,6 +33,7 @@ export const GlossariesListView = () => {
   const organization = useOrganization();
 
   const { t } = useTranslate();
+  //console.log(organization?.currentUserRole);
 
   const glossaries = useApiQuery({
     url: '/v2/organizations/{organizationId}/glossaries-with-stats',
@@ -57,6 +58,7 @@ export const GlossariesListView = () => {
     setCreateDialogOpen(true);
   };
 
+
   const canCreate = ['OWNER', 'MAINTAINER'].includes(
     organization?.currentUserRole || ''
   );
@@ -78,6 +80,7 @@ export const GlossariesListView = () => {
           ],
         ]}
         loading={glossaryFeatureEnabled && glossaries.isLoading}
+
         hideChildrenOnLoading={false}
         maxWidth={1000}
         allCentered
@@ -91,6 +94,7 @@ export const GlossariesListView = () => {
             onFinished={() => setCreateDialogOpen(false)}
           />
         )}
+
         {glossaryFeatureEnabled ? (
           <PaginatedHateoasList
             wrapperComponentProps={{ className: 'listWrapper' }}

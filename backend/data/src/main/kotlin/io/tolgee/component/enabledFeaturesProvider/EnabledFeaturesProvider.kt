@@ -11,7 +11,7 @@ interface EnabledFeaturesProvider {
     organizationId: Long?,
     feature: Feature,
   ): Boolean {
-    return this.get(organizationId).contains(feature)
+    return true
   }
 
   fun checkFeatureEnabled(

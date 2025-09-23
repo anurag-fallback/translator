@@ -81,17 +81,17 @@ export const useQuickStartGuideService = (
     isEmailVerified &&
     isOwner;
 
-  const open =
-    enabled && initialData.state?.preferredOrganization?.quickStart?.open;
+  // const open =
+  //   enabled && initialData.state?.preferredOrganization?.quickStart?.open;
+  const open =false;
+
 
   const state = {
     enabled,
     open,
     active: active[0],
     lastProjectId,
-    completed: allCompleted,
-    floatingOpen,
-    floatingForced,
+    completed: allCompleted
   };
 
   const actions = {
