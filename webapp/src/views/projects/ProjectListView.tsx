@@ -53,7 +53,9 @@ export const ProjectListView = () => {
     preferredOrganization?.currentUserRole || ''
   );
 
+
   const isAdmin = useIsAdmin();
+
 
   const isAdminAccess = !preferredOrganization?.currentUserRole && isAdmin;
 
@@ -73,6 +75,7 @@ export const ProjectListView = () => {
           allCentered
 
           addLabel={t('projects_add_button')}
+          addLinkTo={addAllowed ? LINKS.PROJECT_ADD.build() : undefined}
           hideChildrenOnLoading={false}
           navigation={[
             [<OrganizationSwitch key={0} />],

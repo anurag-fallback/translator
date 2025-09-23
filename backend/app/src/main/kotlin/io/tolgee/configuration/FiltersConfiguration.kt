@@ -26,7 +26,7 @@ class FiltersConfiguration {
   @Bean("filterRegistrationSecurityExceptionHandler")
   fun exceptionHandlerFilter(exceptionHandlerFilter: ExceptionHandlerFilter): FilterRegistrationBean<*> {
     val registration = FilterRegistrationBean(exceptionHandlerFilter)
-    registration.isEnabled = false
+    registration.isEnabled = true
     return registration
   }
 }

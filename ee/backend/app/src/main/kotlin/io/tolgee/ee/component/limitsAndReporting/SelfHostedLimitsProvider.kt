@@ -30,7 +30,7 @@ class SelfHostedLimitsProvider(
     private val DEFAULT_LIMITS =
       UsageLimits(
         keys = UsageLimits.Limit(included = -1, limit = -1),
-        seats = UsageLimits.Limit(included = 10, limit = 10),
+        seats = UsageLimits.Limit(included = -1, limit = -1),
         strings = UsageLimits.Limit(included = -1, limit = -1),
         mtCreditsInCents = UsageLimits.Limit(included = -1, limit = -1),
         isPayAsYouGo = false,
