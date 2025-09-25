@@ -43,7 +43,7 @@ export default defineConfig(({ mode }) => {
       open: true,
       host: process.env.VITE_HOST || undefined,
       // this sets a default port to 3000
-      port: 3000,
+      port: 80,
       //
     },
     build: {

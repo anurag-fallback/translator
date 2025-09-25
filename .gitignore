@@ -82,3 +82,5 @@ ngrok.local.yml
 
 # Sentry Config File
 /webapp/.env.sentry-build-plugin
+backend.log
+webapp/frontend.log
