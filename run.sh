@@ -3,7 +3,7 @@
 # Start frontend server on port 80 (requires sudo)
 echo "Starting frontend server on port 80 requires sudo..."
 cd webapp
-echo "2121" | sudo -S nohup npm run start > frontend.log 2>&1 & 
+sudo nohup npm run start > frontend.log 2>&1 & 
 FRONTEND_PID=$!
 cd ..
 
@@ -15,4 +15,4 @@ echo "Checking for PostgreSQL... Manual check or specific command needed here"
 
 # Start backend server
 echo "Starting backend server..."
-./gradlew server-app:bootRun 
+./gradlew server-app:bootRun
