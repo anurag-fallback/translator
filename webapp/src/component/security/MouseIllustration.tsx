@@ -22,11 +22,11 @@ export function MouseIllustration() {
       <StyledMouse
         src={
           theme.palette.mode === 'dark'
-            ? '/images/mouseYogaDark.svg'
-            : '/images/mouseYogaLight.svg'
+            ? '/images/language.gif'
+            : '/images/language.gif'
         }
       />
-        <h2>Welcome To Jameel Translate</h2>
+        <h2>Welcome To Lokale</h2>
     </StyledIllustration>
   );
 }

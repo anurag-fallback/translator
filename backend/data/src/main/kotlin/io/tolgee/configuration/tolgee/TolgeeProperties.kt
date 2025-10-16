@@ -102,7 +102,7 @@ class TolgeeProperties(
   var frontEndUrl: String? = null,
   var websocket: WebsocketProperties = WebsocketProperties(),
   @DocProperty(description = "Name of the application.", hidden = true)
-  var appName: String = "Jameel Translate",
+  var appName: String = "Lokale",
   @DocProperty(description = "Maximum length of translations.")
   var maxTranslationTextLength: Long = 10000,
   var batch: BatchProperties = BatchProperties(),
