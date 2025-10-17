@@ -309,7 +309,7 @@ class OrganizationRoleService(
     user: UserAccount,
     organization: Organization,
   ) {
-    self.grantRoleToUser(user, organization, organizationRoleType = OrganizationRoleType.OWNER)
+    self.grantRoleToUser(user, organization, organizationRoleType = OrganizationRoleType.MEMBER)
   }
 
   fun setMemberRole(

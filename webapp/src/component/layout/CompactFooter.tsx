@@ -5,7 +5,7 @@ import FacebookLogo from 'tg.svgs/social/facebook.svg?react';
 import GitHubLogo from 'tg.svgs/social/github.svg?react';
 import LinkedInLogo from 'tg.svgs/social/linkedin.svg?react';
 import SlackLogo from 'tg.svgs/social/slack.svg?react';
-import DiscussionsLogo from 'tg.svgs/social/discussions.svg?react';
+import ComposeLogo from 'tg.svgs/logos/compose-multiplatform.svg?react';
 
 const StyledContainer = styled('div')`
   display: grid;
@@ -49,7 +49,7 @@ export const CompactFooter = () => {
       <StyledContent>
         <StyledSocial>
           <StyledLink
-            href="https://twitter.com/ToyotaServiceSa"
+            // href="https://twitter.com/ToyotaServiceSa"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,7 +59,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://ar-ar.facebook.com/ToyotaServiceSA"
+            // href="#https://ar-ar.facebook.com/ToyotaServiceSA"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +69,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://github.com/"
+            // href="#https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,7 +79,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="https://www.linkedin.com/"
+            // href="#https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +89,7 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="Link_of_slack"
+            // href="Link_of_slack"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,12 +99,12 @@ export const CompactFooter = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledLink
-            href="Link of _github_discussion"
+            // href="https://www.flaticon.com/free-animated-icons/translate"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <DiscussionsLogo />
-            <StyledSocialText>Discussions</StyledSocialText>
+            <ComposeLogo/>
+            <StyledSocialText>Flat Icon</StyledSocialText>
           </StyledLink>
         </StyledSocial>
       </StyledContent>

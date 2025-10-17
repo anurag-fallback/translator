@@ -1,6 +1,6 @@
 import { FunctionComponent, useRef, useState } from 'react';
 import { T, useTranslate } from '@tolgee/react';
-import { Alert, useMediaQuery, Link as MuiLink } from '@mui/material';
+import {Alert, useMediaQuery, Link as MuiLink, Box} from '@mui/material';
 import { Link } from 'react-router-dom';
 import { LINKS } from 'tg.constants/links';
 
@@ -84,10 +84,10 @@ export const LoginView: FunctionComponent = () => {
           )
         }
         primaryContent={
-          <LoginCredentialsForm
-            credentialsRef={credentialsRef}
-            onMfaEnabled={() => setMfaRequired(true)}
-          />
+           <LoginCredentialsForm
+             credentialsRef={credentialsRef}
+             onMfaEnabled={() => setMfaRequired(true)}
+           />
         }
         secondaryContent={<LoginMoreInfo />}
       />

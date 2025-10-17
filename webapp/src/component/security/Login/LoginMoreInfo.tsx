@@ -1,7 +1,8 @@
-import { styled, useMediaQuery } from '@mui/material';
+import { styled, useMediaQuery, Box } from '@mui/material';
 import { MouseIllustration } from '../MouseIllustration';
 import { TolgeeMore } from '../TolgeeMore';
 import { SPLIT_CONTENT_BREAK_POINT } from 'tg.component/layout/CompactView';
+import { DemoApplicationButton } from './DemoApplicationButton';
 
 const StyledContainer = styled('div')`
   display: grid;
