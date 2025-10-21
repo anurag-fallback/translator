@@ -1,18 +1,18 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/integrations/svelte/installation"
+  href="https://lokale.io/js-sdk/integrations/svelte/installation"
   style={{ float: 'right' }}
 />
 
-To read full documentation about Tolgee for Svelte, visit [docs](https://tolgee.io/js-sdk/integrations/svelte/installation).
+To read full documentation about Lokale for Svelte, visit [docs](https://lokale.io/js-sdk/integrations/svelte/installation).
 
 ## Install the packages
 
-You will need `@tolgee/svelte` to use `<T>` component or `getTranslate` function.
+You will need `@lokale/svelte` to use `<T>` component or `getTranslate` function.
 
 ```sh
-npm i @tolgee/svelte
+npm i @lokale/svelte
 ```
 
 ## Setup your environment (with SvelteKit)
@@ -24,15 +24,15 @@ VITE_TOLGEE_API_URL={{{apiUrl}}}
 VITE_TOLGEE_API_KEY={{{apiKey}}}
 ```
 
-## Use TolgeeProvider
+## Use LokaleProvider
 
-Wrap your main `App` component with Tolgee provider.
+Wrap your main `App` component with Lokale provider.
 
 ```html
 <script>
-  import { TolgeeProvider, Tolgee, DevTools, FormatSimple } from '@tolgee/svelte';
+  import { LokaleProvider, Lokale, DevTools, FormatSimple } from '@lokale/svelte';
 
-  const tolgee = Tolgee()
+  const lokale = Lokale()
     .use(DevTools())
     .use(FormatSimple())
     .init({
@@ -49,17 +49,17 @@ Wrap your main `App` component with Tolgee provider.
     });
 </script>
 
-<TolgeeProvider tolgee="{tolgee}">
+<LokaleProvider lokale="{lokale}">
   <div slot="fallback">Loading...</div>
   <slot />
-</TolgeeProvider>
+</LokaleProvider>
 ```
 
-## Use Tolgee!
+## Use Lokale!
 
 ```html
 <script>
-  import { T, getTranslate } from '@tolgee/svelte';
+  import { T, getTranslate } from '@lokale/svelte';
 
   const { t } = getTranslate();
 </script>
@@ -76,4 +76,4 @@ Now you are able to translate texts with Alt + Clicking them!
 ## Prepare for production
 
 To prepare your App for production, choose a suitable option described
-[here](https://tolgee.io/js-sdk/integrations/svelte/installation#preparing-for-production).
+[here](https://lokale.io/js-sdk/integrations/svelte/installation#preparing-for-production).

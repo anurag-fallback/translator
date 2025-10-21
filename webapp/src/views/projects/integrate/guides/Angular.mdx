@@ -1,42 +1,42 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/integrations/angular/installation"
+  href="https://lokale.io/js-sdk/integrations/angular/installation"
   style={{ float: 'right' }}
 />
 
-To read full documentation about Tolgee for Angular, visit [docs](https://tolgee.io/js-sdk/integrations/angular/installation).
+To read full documentation about Lokale for Angular, visit [docs](https://lokale.io/js-sdk/integrations/angular/installation).
 
 ## Install packages
 
 ```sh
-npm install @tolgee/ngx
+npm install @lokale/ngx
 ```
 
 ## Setup environment
 
-Add Tolgee properties to your `src/environments/environment.<your env>.ts`
+Add Lokale properties to your `src/environments/environment.<your env>.ts`
 
 ```typescript
 export const environment = {
   production: false,
-  tolgeeApiUrl: '{{{apiUrl}}}',
-  tolgeeApiKey: '{{{apiKey}}}',
+  lokaleApiUrl: '{{{apiUrl}}}',
+  lokaleApiKey: '{{{apiKey}}}',
 };
 ```
 
 ## Setup NgModule
 
-Add NgxTolgeeModule to the imports section.
+Add NgxLokaleModule to the imports section.
 
 ```typescript
 import {
   DevTools,
-  NgxTolgeeModule,
-  Tolgee,
+  NgxLokaleModule,
+  Lokale,
   TOLGEE_INSTANCE,
   FormatSimple
-} from '@tolgee/ngx';
+} from '@lokale/ngx';
 
 ...
 @NgModule({
@@ -44,22 +44,22 @@ import {
     ...
   ],
   imports: [
-    NgxTolgeeModule,
+    NgxLokaleModule,
     ...
   ],
   providers: [
     {
       provide: TOLGEE_INSTANCE,
       useFactory: () => {
-        return Tolgee()
+        return Lokale()
           .use(DevTools())
           .use(FormatSimple())
           .init({
             language: 'en'
 
             // for development
-            apiUrl: environment.tolgeeApiUrl,
-            apiKey: environment.tolgeeApiKey,
+            apiUrl: environment.lokaleApiUrl,
+            apiKey: environment.lokaleApiKey,
 
             // for production
             staticData: {
@@ -76,7 +76,7 @@ export class AppModule {}
 
 Maybe you will also need to set `skipLibCheck` to `true` in your `compilerOptions` section of `tsconfig.json`.
 
-## Use Tolgee!
+## Use Lokale!
 
 ```html
 <div t key="hello_world"></div>
@@ -99,4 +99,4 @@ this.translateService
 ## Prepare for production
 
 To prepare your App for production, choose a suitable option described
-[here](https://tolgee.io/js-sdk/integrations/angular/installation#preparing-for-production).
+[here](https://lokale.io/js-sdk/integrations/angular/installation#preparing-for-production).

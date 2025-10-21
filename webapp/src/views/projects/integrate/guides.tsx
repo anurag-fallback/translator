@@ -46,7 +46,7 @@ export const guides = [
     guide: React.lazy(() => import('./guides/Js.mdx')),
   },
   {
-    name: 'Tolgee CLI',
+    name: 'Lokale CLI',
     icon: Terminal,
     guide: React.lazy(() => import('./guides/Cli.mdx')),
   },

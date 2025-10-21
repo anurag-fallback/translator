@@ -1,32 +1,32 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/platform/integrations/unreal_plugin/usage"
+  href="https://lokale.io/platform/integrations/unreal_plugin/usage"
   style={{ float: 'right' }}
 />
 
-To read full documentation about the Tolgee Unreal plugin, visit [docs](https://tolgee.io/platform/integrations/unreal_plugin/usage).
+To read full documentation about the Lokale Unreal plugin, visit [docs](https://lokale.io/platform/integrations/unreal_plugin/usage).
 
 ## Installing the plugin
 
 First, you need to install the plugin from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/2757e202f8f3408bbf66f65d26223398) and add it to your project/engine.
 
-Alternatively, you can clone the plugin from [GitHub](https://github.com/tolgee/tolgee-unreal) and compile it locally.
+Alternatively, you can clone the plugin from [GitHub](https://github.com/lokale/lokale-unreal) and compile it locally.
 
 ## Enabling the plugin
 
-To enable the Tolgee plugin inside Unreal, perform the following steps:
+To enable the Lokale plugin inside Unreal, perform the following steps:
 
 1. Navigate to the Toolbar `Edit` menu
 2. Open the `Plugins` window
-3. Find the Tolgee plugin and tick the checkbox next to it
+3. Find the Lokale plugin and tick the checkbox next to it
 4. Press `Restart now` or restart your project manually.
 
 ## Localization Provider setup
 
 Open the Unreal Engine Localization Dashboard (located at Tools → Localization Dashboard) and have the `Localization Service Provider` tab open.
 
-Set the `Localization Service Provider` to `Tolgee` via the dropdown.
+Set the `Localization Service Provider` to `Lokale` via the dropdown.
 
 This will spawn 2 additional fields, set their values to:
 
@@ -44,13 +44,13 @@ This will spawn 2 additional fields, set their values to:
 
 ## Localization Target setup
 
-For each Localization Target of your game you want to connect to Tolgee, go under the `Languages` section and you should have 3 additional buttons on the actions toolbar.
+For each Localization Target of your game you want to connect to Lokale, go under the `Languages` section and you should have 3 additional buttons on the actions toolbar.
 
-1. `Tolgee Pull`
-2. `Tolgee Push`
-3. `Tolgee Settings`
+1. `Lokale Pull`
+2. `Lokale Push`
+3. `Lokale Settings`
 
-Press `Tolgee Settings` and set the `Project Id` to:
+Press `Lokale Settings` and set the `Project Id` to:
 
 ```sh
 {{{projectId}}}
@@ -60,9 +60,9 @@ Press `Tolgee Settings` and set the `Project Id` to:
 
 To make the initial push (or to update it after creating/deleting/updating keys):
 
-1. Run Unreal's `Gather Text` followed by `Tolgee Push`
-2. Go inside the Tolgee web dashboard and translate
-3. Run `Tolgee Pull` to get the latest data from your dashboard
+1. Run Unreal's `Gather Text` followed by `Lokale Push`
+2. Go inside the Lokale web dashboard and translate
+3. Run `Lokale Pull` to get the latest data from your dashboard
 
 Extra resources:
 

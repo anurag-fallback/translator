@@ -1,18 +1,18 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/integrations/react/installation"
+  href="https://lokale.io/js-sdk/integrations/react/installation"
   style={{ float: 'right' }}
 />
 
-To read full documentation about Tolgee for React, visit [docs](https://tolgee.io/js-sdk/integrations/react/installation).
+To read full documentation about Lokale for React, visit [docs](https://lokale.io/js-sdk/integrations/react/installation).
 
 ## Install the packages
 
-You will need `@tolgee/react` to use `<T>` component or `useTranslate` hook.
+You will need `@lokale/react` to use `<T>` component or `useTranslate` hook.
 
 ```sh
-npm install @tolgee/react
+npm install @lokale/react
 ```
 
 ## Setup your environment
@@ -24,14 +24,14 @@ VITE_APP_TOLGEE_API_URL={{{apiUrl}}}
 VITE_APP_TOLGEE_API_KEY={{{apiKey}}}
 ```
 
-## Use TolgeeProvider
+## Use LokaleProvider
 
-Wrap your main `App` component with Tolgee provider.
+Wrap your main `App` component with Lokale provider.
 
 ```typescript jsx
-import { Tolgee, DevTools, TolgeeProvider, FormatSimple } from "@tolgee/react";
+import { Lokale, DevTools, LokaleProvider, FormatSimple } from "@lokale/react";
 
-const tolgee = Tolgee()
+const lokale = Lokale()
   .use(DevTools())
   .use(FormatSimple())
   .init({
@@ -49,18 +49,18 @@ const tolgee = Tolgee()
 
 ...
 
-<TolgeeProvider
-  tolgee={tolgee}
+<LokaleProvider
+  lokale={lokale}
   fallback="Loading..." // loading fallback
 >
   <App />
-</TolgeeProvider>
+</LokaleProvider>
 ```
 
-## Use Tolgee!
+## Use Lokale!
 
 ```typescript jsx
-import { T } from "@tolgee/react";
+import { T } from "@lokale/react";
 
 ...
 
@@ -70,7 +70,7 @@ import { T } from "@tolgee/react";
 or
 
 ```typescript jsx
-import { useTranslate } from "@tolgee/react";
+import { useTranslate } from "@lokale/react";
 
 ...
 
@@ -84,4 +84,4 @@ t("key_to_translate")
 ## Prepare for production
 
 To prepare your App for production, choose a suitable option described
-[here](https://tolgee.io/js-sdk/integrations/react/installation#preparing-for-production).
+[here](https://lokale.io/js-sdk/integrations/react/installation#preparing-for-production).

@@ -1,18 +1,18 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/integrations/vue/installation"
+  href="https://lokale.io/js-sdk/integrations/vue/installation"
   style={{ float: 'right' }}
 />
 
-To read full documentation about Tolgee for React, visit [docs](https://tolgee.io/js-sdk/integrations/vue/installation).
+To read full documentation about Lokale for React, visit [docs](https://lokale.io/js-sdk/integrations/vue/installation).
 
 ## Install the packages
 
-You will need `@tolgee/vue` to use `<T>` component or `TolgeeMixin` with `$t` function.
+You will need `@lokale/vue` to use `<T>` component or `LokaleMixin` with `$t` function.
 
 ```sh
-npm install @tolgee/vue
+npm install @lokale/vue
 ```
 
 ## Setup your environment
@@ -24,14 +24,14 @@ VITE_APP_TOLGEE_API_URL={{{apiUrl}}}
 VITE_APP_TOLGEE_API_KEY={{{apiKey}}}
 ```
 
-## Use TolgeeProvider
+## Use LokaleProvider
 
-Wrap your whole app with Tolgee provider.
+Wrap your whole app with Lokale provider.
 
 ```ts
-import { Tolgee, DevTools, VueTolgee, FormatSimple } from '@tolgee/vue';
+import { Lokale, DevTools, VueLokale, FormatSimple } from '@lokale/vue';
 
-const tolgee = Tolgee()
+const lokale = Lokale()
   .use(DevTools())
   .use(FormatSimple())
   .init({
@@ -49,21 +49,21 @@ const tolgee = Tolgee()
 
 ...
 
-app.use(VueTolgee, { tolgee });
+app.use(VueLokale, { lokale });
 
 ...
 
 <template>
-  <TolgeeProvider>
+  <LokaleProvider>
     <template v-slot:fallback>
       <div>Loading...</div>
     </template>
     <App />
-  </TolgeeProvider>
+  </LokaleProvider>
 </template>
 ```
 
-## Use Tolgee!
+## Use Lokale!
 
 ```html
 <template>
@@ -79,7 +79,7 @@ or
 </template>
 
 <script>
-  import {T} from "@tolgee/vue";
+  import {T} from "@lokale/vue";
 
   ...
 </script>
@@ -88,4 +88,4 @@ or
 ## Prepare for production
 
 To prepare your App for production, choose a suitable option described
-[here](https://tolgee.io/js-sdk/integrations/vue/installation#preparing-for-production).
+[here](https://lokale.io/js-sdk/integrations/vue/installation#preparing-for-production).

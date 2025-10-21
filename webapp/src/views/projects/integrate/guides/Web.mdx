@@ -1,29 +1,29 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/initialization"
+  href="https://lokale.io/js-sdk/initialization"
   style={{ float: 'right' }}
 />
 
-To read more about how to use Tolgee on Web without any modern JS framework,
-please visit [docs](https://tolgee.io/js-sdk/initialization).
+To read more about how to use Lokale on Web without any modern JS framework,
+please visit [docs](https://lokale.io/js-sdk/initialization).
 
-## Add Tolgee libraries to your Web page
+## Add Lokale libraries to your Web page
 
-You need `@tolgee/web` library to translate your texts:
+You need `@lokale/web` library to translate your texts:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@tolgee/web/dist/tolgee-web.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lokale/web/dist/lokale-web.umd.min.js"></script>
 ```
 
-## Setup Tolgee
+## Setup Lokale
 
 ```javascript
 // index.js
-const { Tolgee, InContextTools, FormatSimple, BackendFetch } =
-  window['@tolgee/web'];
+const { Lokale, InContextTools, FormatSimple, BackendFetch } =
+  window['@lokale/web'];
 
-const tolgee = Tolgee()
+const lokale = Lokale()
   .use(InContextTools())
   .use(FormatSimple())
   .use(BackendFetch())
@@ -39,18 +39,18 @@ const tolgee = Tolgee()
     observerOptions: { inputPrefix: '{{', inputSuffix: '}}' },
   });
 
-tolgee.run();
+lokale.run();
 ```
 
-## Do stuff when Tolgee is loaded (optional)
+## Do stuff when Lokale is loaded (optional)
 
 ```javascript
-tolgee.run().then(() => {
+lokale.run().then(() => {
   document.getElementById('loading').style.display = 'none';
 });
 ```
 
-## Use Tolgee
+## Use Lokale
 
 ```html
 <h1>{{hello_world}}</h1>
@@ -59,7 +59,7 @@ tolgee.run().then(() => {
 or
 
 ```javascript
-tolgee.on('update', () => {
-  document.title = tolgee.t('tolgee_example_title', { noWrap: true });
+lokale.on('update', () => {
+  document.title = lokale.t('lokale_example_title', { noWrap: true });
 });
 ```

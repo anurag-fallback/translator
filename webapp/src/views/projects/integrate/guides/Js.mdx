@@ -1,26 +1,26 @@
 import { GoToDocsButton } from '../component/GoToDocsButton';
 
 <GoToDocsButton
-  href="https://tolgee.io/js-sdk/initialization"
+  href="https://lokale.io/js-sdk/initialization"
   style={{ float: 'right' }}
 />
 
-To use Tolgee with NPM, please visit [docs](https://tolgee.io/js-sdk/initialization).
+To use Lokale with NPM, please visit [docs](https://lokale.io/js-sdk/initialization).
 
 It works fine with Webpack or Rollup projects! ;)
 
 ## Install packages
 
 ```sh
-npm install @tolgee/web
+npm install @lokale/web
 ```
 
-## Create Tolgee instance
+## Create Lokale instance
 
 ```javascript
-import { Tolgee, FormatSimple, DevTools, BackendFetch } from '@tolgee/web';
+import { Lokale, FormatSimple, DevTools, BackendFetch } from '@lokale/web';
 
-const tolgee = Tolgee()
+const lokale = Lokale()
   .use(DevTools())
   .use(FormatSimple())
   .use(BackendFetch())
@@ -36,21 +36,21 @@ const tolgee = Tolgee()
     observerOptions: { inputPrefix: '{{', inputSuffix: '}}' },
   });
 
-tolgee.run();
+lokale.run();
 ```
 
-## Do stuff when Tolgee is loaded (optional)
+## Do stuff when Lokale is loaded (optional)
 
 ```javascript
-tolgee.run().then(() => {
+lokale.run().then(() => {
   document.getElementById('loading').style.display = 'none';
 });
 ```
 
-## Use Tolgee!
+## Use Lokale!
 
 ```javascript
-tolgee.on('update', () => {
-  document.title = tolgee.t('tolgee_example_title', { noWrap: true });
+lokale.on('update', () => {
+  document.title = lokale.t('lokale_example_title', { noWrap: true });
 });
 ```
